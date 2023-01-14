@@ -1,0 +1,62 @@
+######################################################################
+# Build Tools
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+!*/build/*.java
+!*/build/*.html
+!*/build/*.xml
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# Mac #
+.DS_Store
+
+
+### IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+.mvn/
+mvnw.cmd
+mvnw
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# eclipse #
+.settings
+.project
+.classpath
+.log
+*.class
+
+######################################################################
+# Others
+*.log
+*.xml.versionsBackup
+*.swp
+
+### VS Code ###
+.vscode/
