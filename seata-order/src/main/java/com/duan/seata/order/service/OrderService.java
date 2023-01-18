@@ -13,4 +13,5 @@ import com.duan.seata.order.entity.Order;
  */
 public interface OrderService extends IService<Order> {
 
+    void addOrder();
 }

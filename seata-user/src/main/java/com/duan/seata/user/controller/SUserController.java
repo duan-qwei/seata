@@ -1,9 +1,12 @@
 package com.duan.seata.user.controller;
 
 
+import com.duan.seata.user.service.SUserService;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -17,5 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/sUser")
 public class SUserController {
 
+    @Resource
+    private SUserService userService;
+
+    @RequestMapping(value = "/addOrder", method = RequestMethod.POST)
+    public void addOrder(){
+        userService.addOrder();
+    }
 }
 

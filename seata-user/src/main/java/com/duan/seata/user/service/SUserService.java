@@ -13,4 +13,5 @@ import com.duan.seata.user.entity.SUser;
  */
 public interface SUserService extends IService<SUser> {
 
+    void addOrder();
 }
