@@ -1,11 +1,13 @@
-package com.example.seata.order;
+package com.duan.seata.order;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.duan.seata.order")
 @EnableDiscoveryClient
+@MapperScan("com.duan.seata.user.mapper")
 public class SeataOrderApplication {
 
     public static void main(String[] args) {

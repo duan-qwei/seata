@@ -1,0 +1,19 @@
+server:
+  port: 9092
+spring:
+  application:
+    name: SEATA-ORDER
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.19.131:8848
+        namespace: 2d055d1f-2625-443b-98c0-2a536f8babd4
+        username: nacos
+        password: nacos
+        file-extension: yml
+      discovery:
+        namespace: 2d055d1f-2625-443b-98c0-2a536f8babd4
+        server-addr: 192.168.19.131:8848
+        username: nacos
+        password: nacos
+
