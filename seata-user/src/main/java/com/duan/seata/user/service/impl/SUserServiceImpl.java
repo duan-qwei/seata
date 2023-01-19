@@ -32,11 +32,12 @@ public class SUserServiceImpl extends ServiceImpl<SUserMapper, SUser> implements
         SUser user = new SUser();
         user.setId(IdWorker.getId());
         user.setUserName("nihao" + IdWorker.getMillisecond());
-        user.setPhone("18609690156");
-        user.setEmail("duanqwei@gmail.com");
+        user.setPhone("1835645690156");
+        user.setEmail("dusdfwei@gmail.com");
         user.setCreateTime(new Date());
         user.setUpdateTime(new Date());
         save(user);
         orderFeign.addOrder();
+        Integer res = 1 / 0;
     }
 }
