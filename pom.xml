@@ -18,6 +18,8 @@
         <module>seata-user</module>
         <module>seata-order</module>
         <module>seata-common</module>
+        <module>seata-gateway</module>
+        <module>seata-storyage</module>
     </modules>
     <properties>
         <java.version>17</java.version>
@@ -44,6 +46,8 @@
         <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+        <jasypt.version>3.0.5</jasypt.version>
+        <nacos.config.version>2021.1</nacos.config.version>
     </properties>
 
     <packaging>pom</packaging>
@@ -193,6 +197,14 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
+
+            <!-- 引入数据库密码加密 -->
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

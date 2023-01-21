@@ -11,6 +11,10 @@ spring:
         username: nacos
         password: nacos
         file-extension: yml
+        ## 共享配置（data-id值必须和控制台配置的名称一样）
+        shared-configs:
+          - data-id: SEATA-SHARE.yml
+            refresh: true
       discovery:
         namespace: bf6055aa-6847-4015-8e1e-bc8ba879caa0
         server-addr: 192.168.19.131:8848
