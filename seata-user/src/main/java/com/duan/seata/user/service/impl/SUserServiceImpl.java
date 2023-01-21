@@ -19,11 +19,6 @@ public class SUserServiceImpl extends ServiceImpl<SUserMapper, SUser> implements
 
     @Override
     public void addOrder(String userId, String commodityCode, Integer count, Double money) {
-//        // 获取全局事务的 ID
-//        String xid = RootContext.getXID();
-//        BusinessActionContext businessActionContext = new BusinessActionContext();
-//        businessActionContext.setXid(xid);
-//        storageFeign.prepare(businessActionContext, commodityCode, count);
-//        orderFeign.prepare(businessActionContext, userId, commodityCode, count, money);
+
     }
 }

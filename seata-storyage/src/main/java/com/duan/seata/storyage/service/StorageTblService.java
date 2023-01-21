@@ -13,9 +13,4 @@ import com.duan.seata.storyage.entity.StorageTbl;
  */
 public interface StorageTblService extends IService<StorageTbl> {
 
-//    boolean prepare(String commodityCode, Integer count);
-//
-//    boolean commit(BusinessActionContext businessActionContext);
-//
-//    boolean rollback(BusinessActionContext businessActionContext);
 }
