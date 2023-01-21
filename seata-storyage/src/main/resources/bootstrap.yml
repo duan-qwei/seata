@@ -1,8 +1,8 @@
 server:
-  port: 9092
+  port: 9093
 spring:
   application:
-    name: SEATA-ORDER
+    name: SEATA-STORAGE
   cloud:
     nacos:
       config:

@@ -13,5 +13,9 @@ import com.duan.seata.order.entity.Order;
  */
 public interface OrderService extends IService<Order> {
 
-    void addOrder();
+//    boolean prepare(BusinessActionContext businessActionContext, String userId, String commodityCode, Integer count, Double money);
+//
+//    boolean commit(BusinessActionContext businessActionContext);
+//
+//    boolean rollback(BusinessActionContext businessActionContext);
 }

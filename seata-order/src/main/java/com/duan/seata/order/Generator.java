@@ -76,7 +76,7 @@ public class Generator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://192.168.19.131:3306/seata_order?useUnicode=true&nullCatalogMeansCurrent=true&characterEncoding=utf-8&serverTimezone=UTC");
+        dsc.setUrl("jdbc:mysql://192.168.19.131:3306/seata_storage?useUnicode=true&nullCatalogMeansCurrent=true&characterEncoding=utf-8&serverTimezone=UTC");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
