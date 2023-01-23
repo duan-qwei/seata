@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.duan</groupId>
         <artifactId>seata</artifactId>
@@ -10,23 +9,17 @@
     </parent>
 
     <groupId>com.duan</groupId>
-    <artifactId>seata-user</artifactId>
+    <artifactId>seata-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>seata-user</name>
-    <description>seata-user</description>
-
+    <name>seata-gateway</name>
+    <description>seata-gateway</description>
 
     <dependencies>
         <dependency>
             <groupId>com.duan</groupId>
             <artifactId>seata-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.cloud</groupId>
-                    <artifactId>spring-cloud-starter-gateway</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
+
 </project>

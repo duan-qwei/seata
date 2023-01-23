@@ -20,6 +20,12 @@
             <groupId>com.duan</groupId>
             <artifactId>seata-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-starter-gateway</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
